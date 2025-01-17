@@ -2,7 +2,7 @@
 require 'db_connection.php';
 
 header('Content-Type: application/json');
-
+require 'set_headers.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     echo json_encode([
